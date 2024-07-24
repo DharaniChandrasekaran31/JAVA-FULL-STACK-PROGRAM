@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>String Functions</title>
+        <script>
+            function strings(){
+                var a = document.getElementById("n1").value;
+                var op = document.getElementById("op").value;
+                var result = "";
+                if (op == "len") 
+                {
+                    result = "String Length :" + a.length;
+                }
+                if (op == "CharAt") 
+                {
+                    result = "String CharAt :" + a.charAt(1);
+                } 
+                if (op == "slice") 
+                {
+                    result = "String Slice :" + a.slice(0, 3);
+                }
+                if (op == "substring") 
+                {
+                    result = "String SubString :" + a.substring(0, 3); 
+                } 
+                if (op == "substr") 
+                {
+                    result = "String Substr :" + a.substr(0, 3); 
+                } 
+                if (op == "upper") 
+                {
+                    result = "String Uppercase :" + a.toUpperCase();
+                }
+                if (op == "lower") 
+                {
+                    result = "String Lowercase :" + a.toLowerCase();
+                } 
+                if (op == "concatenate") 
+                {
+                    result = "String Concatenate :" + a.concat(" World!");
+                } 
+                if (op == "trim") 
+                {
+                    result = "String Trim :" + a.trim();
+                } 
+                if (op == "trim start") 
+                {
+                    result = "String TrimStart :" + a.trimStart();
+                }
+                if (op == "trim end") 
+                {
+                    result = "String TrimEnd :" + a.trimEnd();
+                } 
+                if (op == "repeat") 
+                {
+                    result = "String Repeat :" + a.repeat(2);
+                } 
+                if (op == "replace") 
+                {
+                    result = "String Replace :" + a.replace("Hello", "Hi"); 
+                } 
+                if (op == "replace all") 
+                {
+                    result = "String ReplaceAll :" + a.replaceAll("Hello", "Hi"); 
+                } 
+                if (op == "split") 
+                {
+                    result = "String Split :" + a.split(" "); 
+                }
+                document.getElementById("ResultDiv").innerHTML="<font color='green'><b>"+result+"</b></font>";         
+            }
+        </script>
+    </head>
+    <body>
+        Enter The string :  <input type="text" id="n1"/>
+        <br>
+        Select Operation :  <select id="op">
+            <option value="len">String Length</option>
+            <option value="CharAt">String CharAt</option>
+            <option value="slice">String Slice</option>
+            <option value="substring">String SubString</option>
+            <option value="substr">String Substr</option>
+            <option value="upper">String Uppercase</option>
+            <option value="lower">String Lowercase</option>
+            <option value="concatenate">String Concatenate</option>
+            <option value="trim">String Trim</option>
+            <option value="trim start">String TrimStart</option>
+            <option value="trim end">String TrimEnd</option>
+            <option value="repeat">String Repeat</option>
+            <option value="replace">String Replace</option>
+            <option value="replace all">String ReplaceAll</option>
+            <option value="split">String Split</option>
+        </select>
+        <br>
+        <button onclick="strings()">Result</button>
+        <br>
+        <div id="ResultDiv"></div>
+    </body>
+</html>
