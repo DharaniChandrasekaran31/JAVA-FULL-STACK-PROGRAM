@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        #border{
+            height: 540px;
+            width: 60%;
+            left: 250px;
+            border: 9px solid black;
+            border-bottom: 0px;
+            border-collapse: collapse;
+        }
+        #table{
+        height: 500px;
+        width:800px;
+        box-sizing: border-box;
+        border:6px solid white;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        border-collapse: collapse;
+        }
+        #b{
+            background-color: rgb(218, 155, 165);
+            height: 105px;
+            width:100px;
+        }
+        #w{
+            background-color: black;
+            height: 100px;
+            width:100px;
+        }
+        #b1{
+            background-color: rgb(218, 155, 165);
+            height: 100px;
+            width:100px;
+            border-bottom: 2px solid black;
+        }
+        #row{
+            height: 100px;
+            width:800px;
+        }
+        #col{
+            height: 2px;
+            width:800px;
+        }
+        #w2{
+            background-color: black;
+            height: 1px;
+            width:100px;
+        }
+        #b2{
+            background-color: rgb(218, 155, 165);
+            height: 1px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="border">
+        <table id="table">
+            <tr id="row">
+                <th id="b"></th>
+                <th id="w"></th>
+                <th id="b"></th>
+                <th id="w"></th>
+                <th id="b"></th>
+                <th id="w"></th>
+                <th id="b"></th>
+                <th id="w"></th>
+            </tr>
+            <tr id="row">
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+            </tr>
+            <tr id="row">
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+            </tr>
+            <tr id="row">
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+                <td id="w"></td>
+                <td id="b"></td>
+            </tr>
+            <tr id="row">
+                <td id="b1"></td>
+                <td id="w"></td>
+                <td id="b1"></td>
+                <td id="w"></td>
+                <td id="b1"></td>
+                <td id="w"></td>
+                <td id="b1"></td>
+                <td id="w"></td>
+            </tr>
+            <tr id="col">
+                <td id="w2"></td>
+                <td id="b2"></td>
+                <td id="w2"></td>
+                <td id="b2"></td>
+                <td id="w2"></td>
+                <td id="b2"></td>
+                <td id="w2"></td>
+                <td id="b2"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
